@@ -7,8 +7,7 @@
 function getMaxPairs(noOfWashes, cleanPile, dirtyPile) {
   let cleanSocks = 0;
   for (let index = 0; index < cleanPile.length; index++) {
-    if (
-      cleanPile.includes(cleanPile[index], index + 1) &&
+if (cleanPile.includes(cleanPile[index], index + 1) &&
       cleanPile.length !== index + 1
     ) {
       let value = cleanPile.lastIndexOf(cleanPile[index]);
